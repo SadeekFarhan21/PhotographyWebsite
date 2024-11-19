@@ -76,3 +76,12 @@ jspm_packages
 .node_repl_history
 
 /Gemfile.lock
+
+
+### Ruby template
+*.gem
+*.rbc
+/.config
+/coverage/
+.pdf
+.md
