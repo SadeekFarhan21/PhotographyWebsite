@@ -14,7 +14,7 @@ header:
  subtitle: "by Farhan Sadeek"
 footer:
  name: "Hey there, my name is Farhan"
- bio: "I am a high school student who loves taking picture."
+ bio: "I am a high school senior who loves taking picture, and create websites."
 web_design: "AJ"
 # Configure which exif data to display
 # Tag is the actual exif tag, icon is a fontawesome icon. Use JSON notation without line breaks
