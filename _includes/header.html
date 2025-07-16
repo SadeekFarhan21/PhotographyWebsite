@@ -1,6 +1,14 @@
 <title>{{ site.title }}</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<!-- Prevent initial flash by setting background immediately -->
+<style>
+    html, body {
+        background: #242629 !important;
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <!--[if lte IE 8]>
 <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="assets/css/main.min.css"/>
