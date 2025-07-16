@@ -25,6 +25,16 @@ gulp.task('resize-images', function () {
         .pipe(gulp.dest('images/thumbs'));
 });
 
+// New task to generate thumbnails from existing full-size images
+gulp.task('generate-thumbs', function () {
+    return gulp.src('images/fulls/*.jpg')
+        .pipe(imageResize({
+            width: 512,
+            imageMagick: true
+        }))
+        .pipe(gulp.dest('images/thumbs'));
+});
+
 // compile scss to css
 gulp.task('sass', function () {
     return gulp.src('./assets/sass/main.scss')
