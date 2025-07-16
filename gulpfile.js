@@ -29,8 +29,12 @@ gulp.task('resize-images', function () {
 gulp.task('generate-thumbs', function () {
     return gulp.src('images/fulls/*.jpg')
         .pipe(imageResize({
-            width: 512,
-            imageMagick: true
+            width: 1280,
+            height: 960,
+            crop: false,
+            upscale: false,
+            imageMagick: true,
+            quality: 0.8
         }))
         .pipe(gulp.dest('images/thumbs'));
 });
